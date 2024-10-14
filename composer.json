@@ -1,0 +1,28 @@
+{
+    "name": "ashfieldjumper/laravel-scaleway-mailer",
+    "description": "A Laravel mailer driver for Scaleway transactional emails",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ashfieldjumper\\LaravelScalewayMailer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AshFieldJumper"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/mail": "^10.48|^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ashfieldjumper\\LaravelScalewayMailer\\Providers\\ScalewayMailServiceProvider"
+            ]
+        }
+    }
+}
